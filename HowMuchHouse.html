@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>How much house can I afford?</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="HowMuchHouse.css"/>
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <ul id="navBar">
+      <li>How much house can I afford with a conventional loan?</li>
+  </ul>
+
+  <div id="container">
+
+    <img id="houseImage" src="house.jpg"/>
+
+    <div id="explaination">
+      <p>If you are in the same position as I am, you may be interested
+         in buying a house at this time in your life. There are many questions that come up when deciding
+         to buy a house such as style, location, and preferences; but the most
+         important is finance. How much are you supposed to spend on a house?
+         Most lenders reccommend a monthly mortgage payment of 28% of your gross
+         monthly income for a conventional loan. Lenders also require at least 20%
+         of the home value as a downpayment in a conventional loan purchase. There are many other factors that
+         may affect your ability to qualify for a conventional loan such as debt and reliability of income
+         but for simplicity sake, ignore those other factors at this time and assume
+         you have no other significant debt. To calculate
+         how much house you can afford, you will need to know your annual gross income,
+         your approximate interest rate for a loan, and the loan length.
+         </p>
+    </div>
+
+    <div id="inputs">
+      <form>
+        Yearly gross income:<br>
+        <input type="text" id="income"><br>(pre-tax)<br><br>
+        Interest rate of your conventional loan:<br>
+        <input type="text" id="interest"> %<br><br>
+        Loan length : <br>
+        <input type="text" id="loanLength"> months<br> (a typical loan length is 360 months)<br><br>
+        <button type="button" onClick="calculateHomeCost()">Calculate home cost</button>
+
+        <p>How much house you can afford: <br><br> <span id="houseValue"></span></p>
+        <p>What your monthly mortgage payment would be: <br><br> <span id="monthlyMortgagePayment"></span></p>
+        <p>You should have at least this much for a 20% downpayment: <br><br> <span id="downpayment"></span></p>
+      </form>
+    </div>
+    <div id="conclusion">
+      <p> This method is only a starting point and will only give you an idea of
+          how much of a house you can afford. There are many other factors that
+          can changes how much you can afford such as other assets, liabilities,
+          and your financial comfort level. I would highly suggest that you talk
+          to a qualified financial consultant or a real estate agent.
+      </p>
+    </div>
+  </div>
+    <div id="footer">
+      <p>&copy; Anthony Vu, 2016</p>
+   </div>
+
+  <script src="HowMuchHouse.js" type="text/javascript"></script>
+</body>
+
+</html>
